@@ -1,0 +1,3 @@
+Several thousand temporary files are generated in the process and stored in directory `scratch/`. They correspond to the simulated collections and estimated correlation coefficients.
+
+They are not versioned in this repository for being too many, but ZIP archives are available from the [releases page](https://github.com/julian-urbano/sigir2016-correlation/releases/tag/scratch) and from a [Zenodo repository](http://google.com).

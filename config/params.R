@@ -23,4 +23,3 @@
 # each, we create '.N_TRIALS' large collections of size '.N_t_LARGE', and them sample 10, 20, 30,... from it. It's just
 # easier on the disk.
 .N_t_LARGE <- 1000
-
