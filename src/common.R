@@ -13,6 +13,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 
+.SILENT_LIBRARY <- TRUE
+
+library <- function(package)
+{
+  expr <- substitute(base::library(pkg), list(pkg = substitute(package)))
+  if(.SILENT_LIBRARY) {
+    suppressMessages(suppressWarnings(eval(expr)))
+  }else{
+    eval(expr)
+  }
+}
+
 # Remove the 'bottom' percent of systems from the topic-by-system matrix 'X'.
 dropWorstSystems <- function(X, bottom = 0.25)
 {
