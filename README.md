@@ -1,6 +1,6 @@
 This repository contains the data and source code for the following paper:
 
-* J. Urbano and M. Marrero, "[Estimating the Rank Correlation between the Test Collection Results and the True System Performance](http://julian-urbano.info/files/publications/066-estimating-rank-correlation-test-collection-results-true-system-performance.pdf)", *International ACM SIGIR Conference on Research and Development in Information Retrieval*, 2016.
+* J. Urbano and M. Marrero, "[Toward Estimating the Rank Correlation between the Test Collection Results and the True System Performance](http://julian-urbano.info/files/publications/066-toward-estimating-rank-correlation-test-collection-results-true-system-performance.pdf)", *International ACM SIGIR Conference on Research and Development in Information Retrieval*, 2016.
 
 A [single ZIP file](https://github.com/julian-urbano/sigir2016-correlation/archive/master.zip) can be downloaded as well.
 
@@ -25,6 +25,6 @@ When using this archive, please [cite](CITE.bib) the above paper:
     @inproceedings{Urbano2016:correlation,
 	  author = {Urbano, Juli\'{a}n and Marrero, M\'{o}nica},
       booktitle = {International ACM SIGIR Conference on Research and Development in Information Retrieval},
-      title = {{Estimating the Rank Correlation between the Test Collection Results and the True System Performance}},
+      title = {{Toward Estimating the Rank Correlation between the Test Collection Results and the True System Performance}},
       year = {2016}
     }
