@@ -13,8 +13,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 
+# This overrides the 'library' function so that R packages can be loaded completely silently.
+# This can be very useful when checking output files looking for errors.
+# If you do want to show warnings and other messages when loading packages, set .SILENT_LIBRARY <- FALSE.
 .SILENT_LIBRARY <- TRUE
-
 library <- function(package)
 {
   expr <- substitute(base::library(pkg), list(pkg = substitute(package)))

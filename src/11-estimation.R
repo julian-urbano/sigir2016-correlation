@@ -54,7 +54,8 @@ estimator.precompute <- get(paste0("precompute.", estimator.name))
 estimator.tau <- get(paste0("Etau.", estimator.name))
 estimator.tauAP <- get(paste0("EtauAP.", estimator.name))
 
-X <- as.matrix(read.csv(collection.path))
+# Read original collection
+X <- as.matrix(read.csv(collection.path)) 
 X <- dropWorstSystems(X)
 X.mu <- colMeans(X)
 
