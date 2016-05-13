@@ -38,7 +38,7 @@ Note that the script `src/99-paper.R` is only intended to generate the figures i
 
 ### Custom test collections
 
-Simply add new CSV files with the topic-by-system effectiveness matrices in directory `data/` (no row names). Take a look for instance at the file from the [Ad hoc 2006 collection](/data/adhoc2006.csv). After adding your own files, run all the scripts again as detailed [above](#how-to-reproduce-the-results-in-the-paper).
+Simply add new CSV files with the topic-by-system effectiveness matrices in directory `data/` (no row names). Take a look for instance at the file from the [Ad hoc 6 collection](/data/adhoc6.csv). After adding your own files, run all the scripts again as detailed [above](#how-to-reproduce-the-results-in-the-paper).
 
 ### Custom estimators
 
