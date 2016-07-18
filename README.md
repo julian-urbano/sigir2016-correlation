@@ -49,6 +49,25 @@ You can add new estimators by creating a file `src/estimators/estimator.<name>.R
 
 Take a look for instance at estimators [`ML`](/src/estimators/estimator.ML.R) and [`SHw`](/src/estimators/estimator.SHw.R). These functions are called from `src/11-estimation.R` for each simulated collection. After adding your own files, run script `bin/11-estimation.sh` again to compute all estimates, and `bin/12-compile.sh` to aggregate results.
 
+## How to estimate the correlation of your collection
+
+You can easily estimate the correlation of a new collection given the effectiveness matrix:
+
+1. Run the source of the estimator you want to use.
+2. Read in your data.
+3. Run the `precompute.<name>` function.
+4. Run the `Etau.<name>` or `EtauAP.<name>`.
+
+For instance, here is how to estimate the correlation with the [`ad hoc 6 data`](/data/adhoc6.csv), and with the [`MSQD`](/src/estimators/estimator.MSQD.R) estimator:
+
+    > source("src/estimators/estimator.MSQD.R")
+    > eff <- read.csv("data/adhoc6.csv")
+    > pre <- precompute.MSQD(eff)
+    > Etau.MSQD(eff, pre)
+    [1] 0.8600266
+    > EtauAP.MSQD(eff, pre)
+    [1] 0.816099 
+
 ## License
 
 * The TREC results in `data/` are anonymized and posted here with permission from the organizers.
