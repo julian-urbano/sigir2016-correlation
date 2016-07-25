@@ -79,6 +79,7 @@ When using this archive, please [cite](CITE.bib) the above paper:
     @inproceedings{Urbano2016:correlation,
 	  author = {Urbano, Juli\'{a}n and Marrero, M\'{o}nica},
       booktitle = {International ACM SIGIR Conference on Research and Development in Information Retrieval},
+      pages = {1033--1036},
       title = {{Toward Estimating the Rank Correlation between the Test Collection Results and the True System Performance}},
       year = {2016}
     }
