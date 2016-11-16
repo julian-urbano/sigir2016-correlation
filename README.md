@@ -83,3 +83,5 @@ When using this archive, please [cite](CITE.bib) the above paper:
       title = {{Toward Estimating the Rank Correlation between the Test Collection Results and the True System Performance}},
       year = {2016}
     }
+
+> This work was supported by a Juan de la Cierva postdoctoral fellowship, and grants TIN2015-70816-R and MDM-2015-0502 from the Spanish Government.
